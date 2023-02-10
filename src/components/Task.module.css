@@ -1,0 +1,87 @@
+.task {
+  /* background: var(--gray-700); */
+}
+
+.taskForm {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  margin-top: calc(0px - 1.6rem);
+}
+
+.taskForm input {
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--gray-300);
+  padding: 1rem;
+}
+
+.taskForm input:focus {
+  border: 1px solid var(--primary-dark);
+}
+
+.taskForm button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: var(--secondary-dark);
+  border: 0;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.taskForm button:hover {
+  background: var(--secondary);
+}
+
+.task header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--gray-500);
+  padding-bottom: 1.5rem;
+}
+
+.task .taskCreated strong {
+  color: var(--secondary);
+}
+
+.task .taskCompleted strong {
+  color: var(--primary);
+}
+
+.task header strong {
+  margin-right: 0.5rem;
+}
+
+.task header span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.taskEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4rem;
+}
+
+.taskEmpty > strong {
+  margin-top: 0.5rem;
+}
+
+.taskList {
+  margin-top: 1.5rem;
+}
